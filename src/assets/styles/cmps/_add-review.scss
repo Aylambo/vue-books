@@ -1,0 +1,43 @@
+.review-modal {
+
+    .review-add {
+        display: flex;
+        flex-direction: column;
+        background-color: lightsteelblue;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        padding: 0 20px 20px 20px;
+        width: 350px;
+
+        >* {
+            margin-top: 20px;
+        }
+
+        .close-review {
+            align-self: flex-end;
+        }
+
+        .add-form {
+            gap: 10px;
+
+            button {
+                align-self: center !important;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .review-modal {
+        margin-top: 10px;
+        .review-add {
+            position: static;
+            // top: auto;
+            // left: 50px;
+            width: auto;
+        }
+    }
+}

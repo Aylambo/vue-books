@@ -1,0 +1,33 @@
+.book-edit{
+    background-color: lightseagreen;
+    padding: 10px;
+    .edit-top {
+
+        a {
+            border: 1px solid black;
+            padding: 10px;
+            
+            border-radius: 5px;
+        }
+    }
+    .add-form {
+        align-items: center;
+        justify-content: center;
+        >* {
+            margin-top: 10px;
+        }
+        
+        p {
+            justify-content: center;
+            // width: 100%;
+            
+        }
+
+        input {
+            margin-right: 10px;
+            border: 1px solid black;
+            border-radius: 50px;
+        }
+
+    }
+}

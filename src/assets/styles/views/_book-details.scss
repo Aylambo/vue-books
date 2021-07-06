@@ -1,0 +1,157 @@
+.book-details {
+    background-color: lightskyblue;
+    padding: 10px;
+
+
+    h2 {
+        align-self: center;
+    }
+
+    .book-info {
+        justify-content: space-around;
+
+        .book-info-center {
+            width: 40%;
+            justify-self: center;
+
+            p {
+                font-weight: 600;
+            }
+
+            a {
+                display: inline;
+                align-self: flex-end;
+                text-decoration: none;
+
+                border: 1px solid black;
+                padding: 10px;
+
+                border-radius: 5px;
+
+            }
+        }
+
+        .book-info-left {
+            margin-top: 20px;
+            width: 20%;
+        }
+
+        .review-container {
+
+            // margin-right: 100px;
+            // width: 33%;
+            .btn-add-review {
+                display: inline;
+                align-self: center;
+                text-decoration: none;
+                border: 1px solid black;
+                padding: 10px;
+                border-radius: 5px;
+
+            }
+        }
+    }
+
+    .long {
+        &::after {
+            content: "Long reading";
+        }
+    }
+
+    .decent {
+        &::after {
+            content: "Decent reading";
+        }
+    }
+
+    .light {
+        &::after {
+            content: "Light reading";
+        }
+    }
+
+    .red {
+        color: red;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .veteran {
+        &::after {
+            content: " - More then 10 years ago – Veteran Book";
+        }
+    }
+
+    .new {
+        &::after {
+            content: " - Less then a Year ago – New!";
+        }
+    }
+
+    .sale {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1vh 1.5vh;
+        height: 4vh;
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        border-radius: 15px;
+        width: 200px;
+        text-shadow: 0px 0px 4px #42902b;
+        background-color: rgb(56, 204, 11);
+
+    }
+
+    .read-less-more {
+        display: block;
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+
+    .book-details {
+        .book-info {
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+
+            .book-info-left {
+                width: auto;
+            }
+
+            .book-info-center {
+                width: auto;
+
+                a {
+                    align-self: center;
+                }
+                p {
+                    margin-top: 7px;
+                }
+            }
+
+            .review-container {
+
+                // margin-right: 100px;
+                // width: 33%;
+                .btn-add-review {
+                    // position: absolute;
+                    // top: 536px;
+                    // left: 10px;
+                    margin-top: 10px;
+                    height: 40;
+                    width: 120px;
+                    font-size: 16px;
+                }
+
+            }
+        }
+    }
+}
+
