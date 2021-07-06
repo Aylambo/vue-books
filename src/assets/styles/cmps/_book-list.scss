@@ -1,37 +1,59 @@
-.actions {
-    justify-content: space-between;
-    align-items: center;
-    button {
-        border: none;
-        padding:none;
+.book-list {
 
-        img {
-            height:25px;
-            width:25px;
+        .book-list {
+        li {
+            // height: 200px;
+            // width: 100px;
         }
     }
-    a {
-        text-decoration: none;
-        // border: unset;
-        // background: unset;
-        // padding: none;
-        // outline: none;
-        // border: 1px solid black;
-        color: black;
-        border-radius: 5px;
-        img {
-            height:25px;
-            width:25px;
-            margin: 5px;
+    .actions {
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            border: none;
+            padding: none;
+
+            img {
+                height: 25px;
+                width: 25px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            // border: unset;
+            // background: unset;
+            // padding: none;
+            // outline: none;
+            // border: 1px solid black;
+            color: black;
+            border-radius: 5px;
+
+            img {
+                height: 25px;
+                width: 25px;
+                margin: 5px;
+            }
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+
+        a:active {
+            color: white;
+            border-color: white;
         }
     }
+}
 
-    a:hover {
-        cursor: pointer;
-    }
+@media (max-width: 480px) {
 
-    a:active {
-        color: white;
-        border-color: white;
-    }
+    // .book-list {
+    //     li {
+    //         height: 200px;
+    //         width: 100px;
+    //     }
+    // }
 }
